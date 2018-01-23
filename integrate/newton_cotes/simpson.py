@@ -22,6 +22,9 @@ def evaluate(bounds, func):
     integral: float
         The integral of function (func) between the bounds
     """
+    if len(bounds) != 2:
+        raise ValueError("Bounds should be a length of two, found %d." % len(bounds))
+
     a = float(bounds[0])
     b = float(bounds[1])
     ya = func(a)

@@ -8,6 +8,8 @@ Welcome to Integrate's documentation!
 
 This is a small library that does basic Newton-Cotes and Monte Carlo integration
 
+.. autofunction:: integrate.newton_cotes.simpson.evaluate
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
