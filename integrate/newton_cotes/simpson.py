@@ -23,7 +23,7 @@ def evaluate(bounds, func):
         The integral of function (func) between the bounds
     """
     a = float(bounds[0])
-    b = funcloat(bounds[1])
+    b = float(bounds[1])
     ya = func(a)
     yb = func((a + b) / 2)
     yc = func(b)
