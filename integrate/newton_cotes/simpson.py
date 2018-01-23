@@ -7,7 +7,11 @@ import numpy as np
 
 def evaluate(bounds, func):
     """
-    Evaluates simpsons rules on an array of values and a function pointer
+    Evaluates simpsons rules on an array of values and a function pointer.
+
+    .. math::
+
+        \int_{a}^{b} = \sum_i ...
 
     Parameters
     ----------
