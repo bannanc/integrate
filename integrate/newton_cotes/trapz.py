@@ -9,6 +9,6 @@ def evaluate(x, f):
     b = x[1]
     ya = f(a)
     yb = f(b)
-    I = (b-a) * (ya + yb) / 2
+    I = (b-a) * (ya + yb) / 2.0
     return I
 
