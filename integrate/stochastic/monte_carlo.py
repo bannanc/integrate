@@ -14,7 +14,7 @@ def monte_1d(x, f, trials):
 
 
 def monte_2d(f, v, domain, trials):
-    area = np.prod(float(domain[1]) - float(domain[0]))
+    area = np.prod(domain[1] - domain[0])
     matrix = np.sqrt(area) * np.random.rand(trials, 2) + np.min(domain)
     v_eval = v(matrix)
     idx = np.where(v_eval < 1.0)

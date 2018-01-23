@@ -22,7 +22,7 @@ def volume(x):
 def test_trapz():
     x = np.array([0, 10])
     I = integrate.newton_cotes.trapz.evaluate(x, g)
-    assert pytest.approx(I) == 9.0
+    assert pytest.approx(I) == 150.0
 
 def test_simpson():
     x = np.array([0, 3])
