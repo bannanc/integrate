@@ -32,7 +32,8 @@ def test_simpson():
 def test_monte1d():
     x = np.array([0, 3])
     I = integrate.stochastic.monte_carlo.monte_1d(x, f, 100000)
-    assert np.allclose(I, 9.00, 1e-2)
+    assert pytest.approx(I) == 9.0
+    #assert np.allclose(I, 9.00, 1e-4)
 
 def test_monte2d():
     domain = np.array([[-1, -1], [1, 1]])
